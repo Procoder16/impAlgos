@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include<limits.h>
 
@@ -19,13 +18,13 @@ int main(){
 
     int maxSum = INT_MIN;
 
-    int sum = 0;
+    int currSum = 0;
 
     for(int i=0; i<n; i++){
-        sum += a[i];
-        maxSum = max(maxSum,sum);
-        if(sum<0){
-            sum = 0;
+        currSum += a[i];
+        maxSum = max(maxSum,currSum);
+        if(currSum<0){
+            currSum = 0;
         }
     }
 
